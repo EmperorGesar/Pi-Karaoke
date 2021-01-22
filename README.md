@@ -1,6 +1,6 @@
 # Pi-Karaoke
 
-A Karaoke system implementation on raspberry pi
+A Karaoke system implementation on Raspberry Pi
 
 ## Screenshot
 ![Image](https://github.com/EmperorGesar/Pi-Karaoke/blob/master/screenshot.png)
