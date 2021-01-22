@@ -2,6 +2,9 @@
 
 Karaoke system implementation on raspberry pi
 
+## Screenshot
+![Image](https://github.com/EmperorGesar/Pi-Karaoke/blob/master/screenshot.png)
+
 ## Compile
 Make sure Qt5 is installed.
 
