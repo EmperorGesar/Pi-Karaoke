@@ -16,7 +16,7 @@ make
 ```
 
 ## Note
-Config file is data.csv, used for locating the path audio and lyric files.
+Config file is data.csv, used for locating the path of audio and lyric files.
 
 data.csv format:
 
