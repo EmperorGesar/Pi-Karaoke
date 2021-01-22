@@ -1,6 +1,6 @@
-# cs3307 project group 59
+# Pi-Karaoke
 
-Wentao Du, Wenhan Sun, Junhao Wang, Jingyi Wu 
+Karaoke system implementation on raspberry pi
 
 ## Compile
 Make sure Qt5 is installed.
@@ -16,7 +16,7 @@ make
 ```
 
 ## Note
-Check data.csv to locate the audio and lyric files correctly.
+Config file is data.csv, used for locating the path audio and lyric files.
 
 data.csv format:
 
