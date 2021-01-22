@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+9132e6a4baabaddc7514e50e2936cacd CMakeFiles/karaoke_autogen

@@ -1,0 +1,136 @@
+\hypertarget{classLyric}{}\doxysection{Lyric Class Reference}
+\label{classLyric}\index{Lyric@{Lyric}}
+
+
+Class for storing lyric data.  
+
+
+
+
+{\ttfamily \#include $<$Lyric.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLyric_a86ef1350356ebd4c5f429c165a22f2e5}{Lyric}} (Q\+String file\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLyric_a409efae964c35b4fb5341922a5ecbf7b}{get\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Get total line. \end{DoxyCompactList}\item 
+qint64 \mbox{\hyperlink{classLyric_abab9fc42997e32392df97f5f31bb99af}{get\+Times}} (int i)
+\begin{DoxyCompactList}\small\item\em Get time of a line. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{classLyric_a47e45ba9495b266b67e53760718d2170}{get\+Words}} (int i)
+\begin{DoxyCompactList}\small\item\em Get lyric of a line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLyric_aeea12ffbc158a546a93d4370c20b03f2}{line\+Total}}
+\item 
+Q\+List$<$ qint64 $>$ \mbox{\hyperlink{classLyric_a7cef509487e21b25c49a70b022b5aed7}{times}}
+\item 
+Q\+List$<$ Q\+String $>$ \mbox{\hyperlink{classLyric_ad971759fa96b7a965324255618de1daf}{words}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for storing lyric data. 
+
+\begin{DoxyAuthor}{Author}
+Wenhan Sun wsun228 251020850 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLyric_a86ef1350356ebd4c5f429c165a22f2e5}\label{classLyric_a86ef1350356ebd4c5f429c165a22f2e5}} 
+\index{Lyric@{Lyric}!Lyric@{Lyric}}
+\index{Lyric@{Lyric}!Lyric@{Lyric}}
+\doxysubsubsection{\texorpdfstring{Lyric()}{Lyric()}}
+{\footnotesize\ttfamily Lyric\+::\+Lyric (\begin{DoxyParamCaption}\item[{Q\+String}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Name of lyric file \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLyric_a409efae964c35b4fb5341922a5ecbf7b}\label{classLyric_a409efae964c35b4fb5341922a5ecbf7b}} 
+\index{Lyric@{Lyric}!getLine@{getLine}}
+\index{getLine@{getLine}!Lyric@{Lyric}}
+\doxysubsubsection{\texorpdfstring{getLine()}{getLine()}}
+{\footnotesize\ttfamily int Lyric\+::get\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get total line. 
+
+\begin{DoxyReturn}{Returns}
+Total number of line 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLyric_abab9fc42997e32392df97f5f31bb99af}\label{classLyric_abab9fc42997e32392df97f5f31bb99af}} 
+\index{Lyric@{Lyric}!getTimes@{getTimes}}
+\index{getTimes@{getTimes}!Lyric@{Lyric}}
+\doxysubsubsection{\texorpdfstring{getTimes()}{getTimes()}}
+{\footnotesize\ttfamily qint64 Lyric\+::get\+Times (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Get time of a line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Line index\+Line index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time of the line 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLyric_a47e45ba9495b266b67e53760718d2170}\label{classLyric_a47e45ba9495b266b67e53760718d2170}} 
+\index{Lyric@{Lyric}!getWords@{getWords}}
+\index{getWords@{getWords}!Lyric@{Lyric}}
+\doxysubsubsection{\texorpdfstring{getWords()}{getWords()}}
+{\footnotesize\ttfamily Q\+String Lyric\+::get\+Words (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Get lyric of a line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Line index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLyric}{Lyric}} of the line 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLyric_aeea12ffbc158a546a93d4370c20b03f2}\label{classLyric_aeea12ffbc158a546a93d4370c20b03f2}} 
+\index{Lyric@{Lyric}!lineTotal@{lineTotal}}
+\index{lineTotal@{lineTotal}!Lyric@{Lyric}}
+\doxysubsubsection{\texorpdfstring{lineTotal}{lineTotal}}
+{\footnotesize\ttfamily int Lyric\+::line\+Total\hspace{0.3cm}{\ttfamily [private]}}
+
+Total number of line \mbox{\Hypertarget{classLyric_a7cef509487e21b25c49a70b022b5aed7}\label{classLyric_a7cef509487e21b25c49a70b022b5aed7}} 
+\index{Lyric@{Lyric}!times@{times}}
+\index{times@{times}!Lyric@{Lyric}}
+\doxysubsubsection{\texorpdfstring{times}{times}}
+{\footnotesize\ttfamily Q\+List$<$qint64$>$ Lyric\+::times\hspace{0.3cm}{\ttfamily [private]}}
+
+Time of each line \mbox{\Hypertarget{classLyric_ad971759fa96b7a965324255618de1daf}\label{classLyric_ad971759fa96b7a965324255618de1daf}} 
+\index{Lyric@{Lyric}!words@{words}}
+\index{words@{words}!Lyric@{Lyric}}
+\doxysubsubsection{\texorpdfstring{words}{words}}
+{\footnotesize\ttfamily Q\+List$<$Q\+String$>$ Lyric\+::words\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classLyric}{Lyric}} of each line 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Lyric.\+h\item 
+Lyric.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+8be5ba2adb93765c8b29cc91d36a9d89 CMakeFiles/karaoke_automoc

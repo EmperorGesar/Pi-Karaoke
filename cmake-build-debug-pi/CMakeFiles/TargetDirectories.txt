@@ -1,0 +1,4 @@
+/home/pi/Documents/cs3307/group59/project/cmake-build-debug-pi/CMakeFiles/rebuild_cache.dir
+/home/pi/Documents/cs3307/group59/project/cmake-build-debug-pi/CMakeFiles/edit_cache.dir
+/home/pi/Documents/cs3307/group59/project/cmake-build-debug-pi/CMakeFiles/karaoke.dir
+/home/pi/Documents/cs3307/group59/project/cmake-build-debug-pi/CMakeFiles/karaoke_automoc.dir

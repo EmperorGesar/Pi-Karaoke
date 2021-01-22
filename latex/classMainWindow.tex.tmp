@@ -1,0 +1,423 @@
+\hypertarget{classMainWindow}{}\doxysection{Main\+Window Class Reference}
+\label{classMainWindow}\index{MainWindow@{MainWindow}}
+
+
+Main window implementation of user interface.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Window\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Main window constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\mbox{\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Main window destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMainWindow_a4f035b25b6181829a9275155e3ca9bbd}{play}} ()
+\begin{DoxyCompactList}\small\item\em Slot function for play button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a2f9bd0fac171b5e0530d6791b08ce212}{replay}} ()
+\begin{DoxyCompactList}\small\item\em Slot function for replay button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_aabed273350d064a3a8d73afb01848fea}{next}} ()
+\begin{DoxyCompactList}\small\item\em Slot function for next button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_acbad2650aa1ea48af4d5b434775615bf}{mute}} ()
+\begin{DoxyCompactList}\small\item\em Slot function for mute button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a8ad596d910558ff11459ed83456a7420}{change\+Volume}} (int volume)
+\begin{DoxyCompactList}\small\item\em Slot function for volume slider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a8ced593c2500c041a37cf539bc0f1808}{change\+Position}} (qint64 position)
+\begin{DoxyCompactList}\small\item\em Slot function for player display position change. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a8b7b7927cefb6820b7abe4cfa0c5893a}{change\+Search\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Slot function for field selection combobox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a19367e7e8499bdab31b9a7b2196d97aa}{reset\+Browse}} (Q\+String input)
+\begin{DoxyCompactList}\small\item\em Slot function for search bar that resets the song browse list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a65a94448931a2ed16077eac6865cf40b}{select\+Song}} (Q\+List\+Widget\+Item $\ast$item)
+\begin{DoxyCompactList}\small\item\em Slot function for song browse list item that add the song to playlist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMainWindow_a0587faba030a8b9a1bba5bb3235ebe5c}{read\+File}} ()
+\begin{DoxyCompactList}\small\item\em Method for reading audio and lyric data from .csv file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a55584a70f8d63c8a18f3a89a1fef3724}{load\+Browse}} ()
+\begin{DoxyCompactList}\small\item\em Method for initializing the song browse list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+String \mbox{\hyperlink{classMainWindow_a836bea826d2cfae3ce551a8ee3f92a1c}{display\+Text}} (Q\+String song\+Name, Q\+String singer)
+\begin{DoxyCompactList}\small\item\em Method for generating string display on song browse list (Warning\+: C\+JK only) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classMainWindow_ae964d2a96c6ad2a43e5c2e02182bc20f}{is\+Playing}}
+\item 
+bool \mbox{\hyperlink{classMainWindow_a2e70af8784e0c94932064c4b15aa6e22}{muted}}
+\item 
+int \mbox{\hyperlink{classMainWindow_ab3843ba73618e8679e99be0f89b0aff0}{line}}
+\item 
+int \mbox{\hyperlink{classMainWindow_a4b2d98637c460613a8b744428bb0aa94}{song\+Total}}
+\item 
+int \mbox{\hyperlink{classMainWindow_a036a9236ddf7d49413a093922e174810}{song\+In\+List}}
+\item 
+int \mbox{\hyperlink{classMainWindow_af2411b5b467c7644f3077776d96041a7}{now\+Playing}}
+\item 
+\mbox{\hyperlink{classUi_1_1MainWindow}{Ui\+::\+Main\+Window}} $\ast$ \mbox{\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}}
+\item 
+Q\+String \mbox{\hyperlink{classMainWindow_abbc48272afefa214896437eb360462c5}{data\+File\+Name}}
+\item 
+Q\+String \mbox{\hyperlink{classMainWindow_a82959cb24e8b996a3f00a8b25abb8d37}{search\+Field}}
+\item 
+Q\+List$<$ \mbox{\hyperlink{classLyric}{Lyric}} $\ast$ $>$ \mbox{\hyperlink{classMainWindow_a78b3f7a3bb90811f6c289fd8a4d65498}{lyrics}}
+\item 
+Q\+List$<$ Q\+String $>$ \mbox{\hyperlink{classMainWindow_a93ab71ac263db546029b7509628b2842}{names}}
+\item 
+Q\+List$<$ Q\+String $>$ \mbox{\hyperlink{classMainWindow_a5ee00551737f73774d024d665519596e}{singers}}
+\item 
+Q\+List$<$ \mbox{\hyperlink{classSong}{Song}} $\ast$ $>$ \mbox{\hyperlink{classMainWindow_a24ef2d98eda79d51533c2f8f70f41217}{all\+Songs}}
+\item 
+Q\+List$<$ int $>$ \mbox{\hyperlink{classMainWindow_a6a8895ad201a8b6dc392393ec8f3b6c6}{in\+List\+Songs}}
+\item 
+Q\+Media\+Player $\ast$ \mbox{\hyperlink{classMainWindow_af3f32d4111cefe576b4789f3611e99e8}{player}}
+\item 
+Q\+Media\+Playlist $\ast$ \mbox{\hyperlink{classMainWindow_a6fc6b1c1f13024793467e79919675b8d}{playlist}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main window implementation of user interface. 
+
+\begin{DoxyAuthor}{Author}
+Wenhan Sun wsun228 251020850 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Main window constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Inherits Q\+Main\+Window \\
+\hline
+\end{DoxyParams}
+Initialize main window
+
+Initialize variables
+
+Initialize playlist and player
+
+Read data file and load song browse list
+
+Widgets connect to slot functions
+
+Initialize volume to 50
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_a8ced593c2500c041a37cf539bc0f1808}\label{classMainWindow_a8ced593c2500c041a37cf539bc0f1808}} 
+\index{MainWindow@{MainWindow}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{changePosition}{changePosition}}
+{\footnotesize\ttfamily void Main\+Window\+::change\+Position (\begin{DoxyParamCaption}\item[{qint64}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot function for player display position change. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Current position of audio \\
+\hline
+\end{DoxyParams}
+Set end time label for display
+
+Set time slider duration
+
+Check whether is the end of the song
+
+Reset lyric
+
+Remove the song from playlist
+
+If is the last song, reset playlist, song name and singer display string list
+
+Set current time label for display
+
+Check whether to update lyric\mbox{\Hypertarget{classMainWindow_a8b7b7927cefb6820b7abe4cfa0c5893a}\label{classMainWindow_a8b7b7927cefb6820b7abe4cfa0c5893a}} 
+\index{MainWindow@{MainWindow}!changeSearchField@{changeSearchField}}
+\index{changeSearchField@{changeSearchField}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{changeSearchField}{changeSearchField}}
+{\footnotesize\ttfamily void Main\+Window\+::change\+Search\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot function for field selection combobox. 
+
+Reset search bar
+
+Switch field\mbox{\Hypertarget{classMainWindow_a8ad596d910558ff11459ed83456a7420}\label{classMainWindow_a8ad596d910558ff11459ed83456a7420}} 
+\index{MainWindow@{MainWindow}!changeVolume@{changeVolume}}
+\index{changeVolume@{changeVolume}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{changeVolume}{changeVolume}}
+{\footnotesize\ttfamily void Main\+Window\+::change\+Volume (\begin{DoxyParamCaption}\item[{int}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot function for volume slider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & Target volume \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a836bea826d2cfae3ce551a8ee3f92a1c}\label{classMainWindow_a836bea826d2cfae3ce551a8ee3f92a1c}} 
+\index{MainWindow@{MainWindow}!displayText@{displayText}}
+\index{displayText@{displayText}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{displayText()}{displayText()}}
+{\footnotesize\ttfamily Q\+String Main\+Window\+::display\+Text (\begin{DoxyParamCaption}\item[{Q\+String}]{song\+Name,  }\item[{Q\+String}]{singer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Method for generating string display on song browse list (Warning\+: C\+JK only) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Name} & \mbox{\hyperlink{classSong}{Song}} name for display \\
+\hline
+{\em singer} & Singer for display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String display on song browse list 
+\end{DoxyReturn}
+Reformat long song name
+
+Add spaces
+
+Add singer\mbox{\Hypertarget{classMainWindow_a55584a70f8d63c8a18f3a89a1fef3724}\label{classMainWindow_a55584a70f8d63c8a18f3a89a1fef3724}} 
+\index{MainWindow@{MainWindow}!loadBrowse@{loadBrowse}}
+\index{loadBrowse@{loadBrowse}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{loadBrowse()}{loadBrowse()}}
+{\footnotesize\ttfamily void Main\+Window\+::load\+Browse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method for initializing the song browse list. 
+
+Load all songs\mbox{\Hypertarget{classMainWindow_acbad2650aa1ea48af4d5b434775615bf}\label{classMainWindow_acbad2650aa1ea48af4d5b434775615bf}} 
+\index{MainWindow@{MainWindow}!mute@{mute}}
+\index{mute@{mute}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{mute}{mute}}
+{\footnotesize\ttfamily void Main\+Window\+::mute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot function for mute button. 
+
+Switch muting state\mbox{\Hypertarget{classMainWindow_aabed273350d064a3a8d73afb01848fea}\label{classMainWindow_aabed273350d064a3a8d73afb01848fea}} 
+\index{MainWindow@{MainWindow}!next@{next}}
+\index{next@{next}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily void Main\+Window\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot function for next button. 
+
+Check whether it is not the last song
+
+Set player to next song, update now playing index and reset lyric
+
+Remove the song from playlist\mbox{\Hypertarget{classMainWindow_a4f035b25b6181829a9275155e3ca9bbd}\label{classMainWindow_a4f035b25b6181829a9275155e3ca9bbd}} 
+\index{MainWindow@{MainWindow}!play@{play}}
+\index{play@{play}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{play}{play}}
+{\footnotesize\ttfamily void Main\+Window\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot function for play button. 
+
+Switch the playing state\mbox{\Hypertarget{classMainWindow_a0587faba030a8b9a1bba5bb3235ebe5c}\label{classMainWindow_a0587faba030a8b9a1bba5bb3235ebe5c}} 
+\index{MainWindow@{MainWindow}!readFile@{readFile}}
+\index{readFile@{readFile}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily void Main\+Window\+::read\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method for reading audio and lyric data from .csv file. 
+
+Open file
+
+Split and read each line\mbox{\Hypertarget{classMainWindow_a2f9bd0fac171b5e0530d6791b08ce212}\label{classMainWindow_a2f9bd0fac171b5e0530d6791b08ce212}} 
+\index{MainWindow@{MainWindow}!replay@{replay}}
+\index{replay@{replay}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{replay}{replay}}
+{\footnotesize\ttfamily void Main\+Window\+::replay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot function for replay button. 
+
+Reset player and lyric\mbox{\Hypertarget{classMainWindow_a19367e7e8499bdab31b9a7b2196d97aa}\label{classMainWindow_a19367e7e8499bdab31b9a7b2196d97aa}} 
+\index{MainWindow@{MainWindow}!resetBrowse@{resetBrowse}}
+\index{resetBrowse@{resetBrowse}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{resetBrowse}{resetBrowse}}
+{\footnotesize\ttfamily void Main\+Window\+::reset\+Browse (\begin{DoxyParamCaption}\item[{Q\+String}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot function for search bar that resets the song browse list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & User input on search bar \\
+\hline
+\end{DoxyParams}
+Clean song browse list
+
+Reload song browse list by matching the user input\mbox{\Hypertarget{classMainWindow_a65a94448931a2ed16077eac6865cf40b}\label{classMainWindow_a65a94448931a2ed16077eac6865cf40b}} 
+\index{MainWindow@{MainWindow}!selectSong@{selectSong}}
+\index{selectSong@{selectSong}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{selectSong}{selectSong}}
+{\footnotesize\ttfamily void Main\+Window\+::select\+Song (\begin{DoxyParamCaption}\item[{Q\+List\+Widget\+Item $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot function for song browse list item that add the song to playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \mbox{\hyperlink{classSong}{Song}} browse list item that indicates a song \\
+\hline
+\end{DoxyParams}
+Get selected primary key
+
+Check whether the song is not in play list
+
+If the song is not in play list or no song in play list, add the song to play list
+
+Add lyric, song name and singer display to lists
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMainWindow_a24ef2d98eda79d51533c2f8f70f41217}\label{classMainWindow_a24ef2d98eda79d51533c2f8f70f41217}} 
+\index{MainWindow@{MainWindow}!allSongs@{allSongs}}
+\index{allSongs@{allSongs}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{allSongs}{allSongs}}
+{\footnotesize\ttfamily Q\+List$<$\mbox{\hyperlink{classSong}{Song}} $\ast$$>$ Main\+Window\+::all\+Songs\hspace{0.3cm}{\ttfamily [private]}}
+
+All song data loaded from data file \mbox{\Hypertarget{classMainWindow_abbc48272afefa214896437eb360462c5}\label{classMainWindow_abbc48272afefa214896437eb360462c5}} 
+\index{MainWindow@{MainWindow}!dataFileName@{dataFileName}}
+\index{dataFileName@{dataFileName}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{dataFileName}{dataFileName}}
+{\footnotesize\ttfamily Q\+String Main\+Window\+::data\+File\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+Name of the data file \mbox{\Hypertarget{classMainWindow_a6a8895ad201a8b6dc392393ec8f3b6c6}\label{classMainWindow_a6a8895ad201a8b6dc392393ec8f3b6c6}} 
+\index{MainWindow@{MainWindow}!inListSongs@{inListSongs}}
+\index{inListSongs@{inListSongs}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{inListSongs}{inListSongs}}
+{\footnotesize\ttfamily Q\+List$<$int$>$ Main\+Window\+::in\+List\+Songs\hspace{0.3cm}{\ttfamily [private]}}
+
+List of primary keys of songs in playlist \mbox{\Hypertarget{classMainWindow_ae964d2a96c6ad2a43e5c2e02182bc20f}\label{classMainWindow_ae964d2a96c6ad2a43e5c2e02182bc20f}} 
+\index{MainWindow@{MainWindow}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{isPlaying}{isPlaying}}
+{\footnotesize\ttfamily bool Main\+Window\+::is\+Playing\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag indicates the playing state \mbox{\Hypertarget{classMainWindow_ab3843ba73618e8679e99be0f89b0aff0}\label{classMainWindow_ab3843ba73618e8679e99be0f89b0aff0}} 
+\index{MainWindow@{MainWindow}!line@{line}}
+\index{line@{line}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{line}{line}}
+{\footnotesize\ttfamily int Main\+Window\+::line\hspace{0.3cm}{\ttfamily [private]}}
+
+Line number of the lyric of the playing song \mbox{\Hypertarget{classMainWindow_a78b3f7a3bb90811f6c289fd8a4d65498}\label{classMainWindow_a78b3f7a3bb90811f6c289fd8a4d65498}} 
+\index{MainWindow@{MainWindow}!lyrics@{lyrics}}
+\index{lyrics@{lyrics}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{lyrics}{lyrics}}
+{\footnotesize\ttfamily Q\+List$<$\mbox{\hyperlink{classLyric}{Lyric}} $\ast$$>$ Main\+Window\+::lyrics\hspace{0.3cm}{\ttfamily [private]}}
+
+Lyrics of songs in playlist \mbox{\Hypertarget{classMainWindow_a2e70af8784e0c94932064c4b15aa6e22}\label{classMainWindow_a2e70af8784e0c94932064c4b15aa6e22}} 
+\index{MainWindow@{MainWindow}!muted@{muted}}
+\index{muted@{muted}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{muted}{muted}}
+{\footnotesize\ttfamily bool Main\+Window\+::muted\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag indicates the muting state \mbox{\Hypertarget{classMainWindow_a93ab71ac263db546029b7509628b2842}\label{classMainWindow_a93ab71ac263db546029b7509628b2842}} 
+\index{MainWindow@{MainWindow}!names@{names}}
+\index{names@{names}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{names}{names}}
+{\footnotesize\ttfamily Q\+List$<$Q\+String$>$ Main\+Window\+::names\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classSong}{Song}} name for display of songs in playlist \mbox{\Hypertarget{classMainWindow_af2411b5b467c7644f3077776d96041a7}\label{classMainWindow_af2411b5b467c7644f3077776d96041a7}} 
+\index{MainWindow@{MainWindow}!nowPlaying@{nowPlaying}}
+\index{nowPlaying@{nowPlaying}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{nowPlaying}{nowPlaying}}
+{\footnotesize\ttfamily int Main\+Window\+::now\+Playing\hspace{0.3cm}{\ttfamily [private]}}
+
+Index of the playing song in playlist \mbox{\Hypertarget{classMainWindow_af3f32d4111cefe576b4789f3611e99e8}\label{classMainWindow_af3f32d4111cefe576b4789f3611e99e8}} 
+\index{MainWindow@{MainWindow}!player@{player}}
+\index{player@{player}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily Q\+Media\+Player$\ast$ Main\+Window\+::player\hspace{0.3cm}{\ttfamily [private]}}
+
+Audio player \mbox{\Hypertarget{classMainWindow_a6fc6b1c1f13024793467e79919675b8d}\label{classMainWindow_a6fc6b1c1f13024793467e79919675b8d}} 
+\index{MainWindow@{MainWindow}!playlist@{playlist}}
+\index{playlist@{playlist}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{playlist}{playlist}}
+{\footnotesize\ttfamily Q\+Media\+Playlist$\ast$ Main\+Window\+::playlist\hspace{0.3cm}{\ttfamily [private]}}
+
+Playlist for player to read \mbox{\Hypertarget{classMainWindow_a82959cb24e8b996a3f00a8b25abb8d37}\label{classMainWindow_a82959cb24e8b996a3f00a8b25abb8d37}} 
+\index{MainWindow@{MainWindow}!searchField@{searchField}}
+\index{searchField@{searchField}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{searchField}{searchField}}
+{\footnotesize\ttfamily Q\+String Main\+Window\+::search\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+Filed for searching from the selection combobox \mbox{\Hypertarget{classMainWindow_a5ee00551737f73774d024d665519596e}\label{classMainWindow_a5ee00551737f73774d024d665519596e}} 
+\index{MainWindow@{MainWindow}!singers@{singers}}
+\index{singers@{singers}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{singers}{singers}}
+{\footnotesize\ttfamily Q\+List$<$Q\+String$>$ Main\+Window\+::singers\hspace{0.3cm}{\ttfamily [private]}}
+
+Singer for display of songs in playlist \mbox{\Hypertarget{classMainWindow_a036a9236ddf7d49413a093922e174810}\label{classMainWindow_a036a9236ddf7d49413a093922e174810}} 
+\index{MainWindow@{MainWindow}!songInList@{songInList}}
+\index{songInList@{songInList}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{songInList}{songInList}}
+{\footnotesize\ttfamily int Main\+Window\+::song\+In\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+Total number of song in playlist \mbox{\Hypertarget{classMainWindow_a4b2d98637c460613a8b744428bb0aa94}\label{classMainWindow_a4b2d98637c460613a8b744428bb0aa94}} 
+\index{MainWindow@{MainWindow}!songTotal@{songTotal}}
+\index{songTotal@{songTotal}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{songTotal}{songTotal}}
+{\footnotesize\ttfamily int Main\+Window\+::song\+Total\hspace{0.3cm}{\ttfamily [private]}}
+
+Total number of song loaded from data file \mbox{\Hypertarget{classMainWindow_a35466a70ed47252a0191168126a352a5}\label{classMainWindow_a35466a70ed47252a0191168126a352a5}} 
+\index{MainWindow@{MainWindow}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUi_1_1MainWindow}{Ui\+::\+Main\+Window}}$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+UI of the main window contains necessary widgets 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

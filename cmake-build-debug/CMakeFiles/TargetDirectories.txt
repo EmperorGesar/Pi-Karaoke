@@ -1,0 +1,4 @@
+/home/emperorgesar/Documents/cs3307/group59/project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/emperorgesar/Documents/cs3307/group59/project/cmake-build-debug/CMakeFiles/karaoke.dir
+/home/emperorgesar/Documents/cs3307/group59/project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/emperorgesar/Documents/cs3307/group59/project/cmake-build-debug/CMakeFiles/karaoke_autogen.dir
